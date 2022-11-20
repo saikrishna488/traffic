@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage timings</title>
+    <style>
+        h1{
+            background-color: #303030;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+        }
+        .b{
+            margin: 20px auto;
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+        }
+        .box{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage timings</h1>
+    <div class="b">
+        <label for="">Vehicle Count</label>
+        <input type="number">
+        <br><br>
+        <p>If vehicle count is more than 30 timings starts with <input type="number" class="box"value="60"></p><br>
+        <p>If vehicle count is less than or equal to 30 timings starts with <input type="number" class="box" value="120"></p><br>
+        <label for="">Traffic Timings</label>
+        <input type="number">
+    </div>
+</body>
+</html>
