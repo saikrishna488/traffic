@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Monitoring system</title>
+    <style>
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #303030;
+            color: white;
+        }
+        #lit{
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+        }
+        .mid{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 10px 20px;
+            width: 400px;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            /* border-bottom: 1px solid black; */
+            /* border-top: 1px solid black; */
+            /* border-radius: 13px; */
+            padding: 10px 5px;
+            text-align: center;
+            width: 90%;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #lb{
+            margin-top: 20px;
+            background-color: #303030;
+            color: white;
+            padding: 5px 10px;
+            border: 1px solid black;
+            font-size: large;
+        }
+        #lb:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+        .in{
+            width: 300px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="lights.png" alt="" id="lit">
+        <h1>Traffic Montitoring System</h1>
+    </div>
+    <div class="mid">
+        <div class="items">
+            <h3>Traffic Police</h3>
+            <form action="#" id="form">
+                <label for="login" class="in">Login ID</label>
+                <input type="number" class="in">
+                <label for="login" class="in">Password</label>
+                <input type="password" class="in">
+                <input type="button" onclick="location.href='profile.html';" value="Login" id="lb">
+            </form>
+        </div>
+        <div class="items">
+            <h3>User</h3>
+            <form action="#" id="form">
+                <label for="login" class="in">Login ID</label>
+                <input type="number" class="in">
+                <label for="login" class="in">Password</label>
+                <input type="password" class="in">
+                <input onclick="location.href='profile.html';" type="button"value="Login" id="lb">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

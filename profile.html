@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .b{
+            display: flex;
+            flex-direction: row;
+        }
+        .pro{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 10px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px 10px;
+        }
+        .page{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+        }
+        #user{
+            height: 60px;
+            width: 60px;
+            margin: 10px auto;
+        }
+        #name{
+            margin: 5px auto;
+            cursor: pointer;
+        }
+        .bu{
+            margin: 2px 5px;
+            background-color: #303030;
+            color: white;
+            padding: 10px 5px;
+            border: 1px solid white;
+        }
+        .bu:hover{
+            background-color: white;
+            border: 1px solid #303030;
+            color: #303030;
+            cursor: pointer;
+        }
+        #search{
+            height: 30px;
+            width: 30px;
+        }
+        #search:hover{
+            cursor: pointer;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding-left: 10px;
+            width: 50%;
+            border: 1px solid black;
+        }
+        #sea{
+            font-size: large;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b">
+        <div class="pro">
+            <h4>Profile :</h4>
+            <img src="user.png" alt="" id="user">
+            <p id="name">Name : xxxxxxxx</p>
+            <br>
+            <button onclick="location.href='location.html';" class="bu">Add Location</button>
+            <button class="bu">Manage Traffic</button>
+            <button class="bu">Manage routes</button>
+            <button class="bu">Manage directions</button>
+            <button class="bu">Manage timings</button>
+            <button class="bu">Vehicle type and count of vehicles</button>
+            <button class="bu">View Traffic</button>
+        </div>
+        <div class="page">
+            <div class="nav">
+                <img src="search.png" alt="" id="search">
+                <input type="search" name="" id="sea" placeholder="Search routes">
+            </div>
+            <div class="nav">
+                <img src="gps.png" alt="" id="search">
+                <input type="search" name="" id="sea" placeholder="Add Location">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

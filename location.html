@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Location</title>
+    <style>
+        h1{
+            background-color: #303030;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+        }
+        .mid{
+            display: flex;
+            flex-direction: column;
+        }
+        h4{
+            font-size: large;
+        }
+        #search{
+            height: 30px;
+            width: 30px;
+        }
+        #search:hover{
+            cursor: pointer;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding: 10px 10px;
+            border: 1px solid black;
+        }
+        #sea{
+            font-size: large;
+            margin-left: 10px;
+        }
+        .area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+        }
+        .image{
+            background-image: url('bg.png');;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        #add{
+            padding: 5px 10px;
+            margin: 10px 0px;
+            margin-left: 95%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Location</h1>
+    <div class="mid">
+        <h4>Place Details</h4>
+        <div class="area">
+            <div class="image">
+                <div class="nav">
+                    <img src="gps.png" alt="" id="search">
+                    <button id="sea" >Edit map location</button>
+                </div>
+                <div class="nav">
+                    <img src="gps.png" alt="" id="search">
+                    <button id="sea" >Current location</button>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+            <h4>Add manually :</h4>
+            <div class="nav">
+                <img src="search.png" alt="" id="search">
+                <input type="search" name="" id="sea" placeholder="Search routes">
+            </div>
+            <button id="add">Add</button>
+        </div>
+    </div>
+</body>
+</html>
